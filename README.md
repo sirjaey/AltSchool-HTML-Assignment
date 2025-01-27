@@ -1,0 +1,1 @@
+This web page displays your basic information, with ALT SCHOOL ID, a biography, relevant details explaining why I joined the program, and my goals for the School of Engineering program. I implemented a fragment identifier feature to enable scrolling back to the top of the page.
