@@ -1,0 +1,141 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+
+a, li{
+    list-style: none;
+    text-decoration: none;
+}
+
+
+.main-body{
+    width: 100%;
+    margin: auto;
+    background-color: gainsboro;
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 40px;
+    
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    position: fixed;
+    background-color: gainsboro;
+    width: 100%;
+    margin-top: -40px;
+    z-index: 100;
+    ul{
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        li{
+            padding: 0 10px;
+        }
+    }
+    a:hover {
+        cursor: pointer;
+        color: black;
+    }
+    
+}
+
+header{
+    font-size: 14px;
+    font-weight: 400px;
+    border-right: 10px solid orange;
+    border-left: 10px solid orange;
+    border-top: 5px solid rgba(255, 166, 0, 0.481);
+    border-bottom: 5px solid rgba(255, 166, 0, 0.481);
+    text-align: center;
+    background-color: beige;
+    padding: 10px;
+}
+
+.title{
+    padding-top: 10px;
+}
+
+.about-me, .biography, .why-I-joined, .my-goals, .footer{
+    background-color: #F7FDFC;
+    box-shadow: 0px 0px 2px 2px #0408131A;
+    padding: 10px;
+    p, ul{
+        padding: 10px 0;
+    }
+}
+
+.biography, .my-goals{
+    background-color: beige;
+    box-shadow: 0px 0px 2px 2px #0408131A; 
+}
+
+.footer{
+    text-align: center;
+    .footer-links{
+        padding-top: 20px;
+        padding-bottom: 3px;
+    }
+    
+}
+.floor{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    a{
+        color: greenyellow;
+    }
+    p, a{
+        padding: 10px 0;
+    }
+}
+
+
+/* RESPONSIVENESS */
+/* TABLET */
+@media screen and (max-width: 992px) {
+    .main-body{
+        width: 100%;
+    }
+    .mobile-No{
+        display: none;
+    }
+}
+
+/* MOBILE */
+@media screen and (max-width: 480px) {
+    .main-body {
+        width: 100%;
+    }
+
+    .mobile-No {
+        display: none;
+    }
+
+    .mobile-Yes{
+        font-size: smaller;
+    }
+}
+
+/* SMALL MOBILE */
+@media screen and (max-width: 375px) {
+    .main-body {
+        width: 100%;
+    }
+
+    .mobile-No, .signup {
+        display: none;
+    }
+
+    .mobile-Yes {
+        font-size: smaller;
+    } 
+}
