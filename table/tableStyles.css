@@ -1,0 +1,160 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: gainsboro;
+
+    ul {
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+
+        li {
+            padding: 0 10px;
+        }
+    }
+    a{
+        text-decoration: none;
+    }
+    a:hover {
+        cursor: pointer;
+        color: black;
+    }
+}
+
+header{
+    padding: 50px;
+}
+
+section{
+    padding: 50px;
+    text-align: center;
+    background-color: white;
+    height: 80vh;
+    table{
+        text-align: left;
+        padding: 50px;
+        width: fit-content;
+        margin: auto;
+        border-collapse: collapse;
+        font-family: sans-serif;
+
+        th, tr, td{
+            border: 2px solid rgba(134, 132, 132, 0.2);          
+            padding: 20px;
+        }
+        td{
+            /* padding-left: 100px; */
+        }
+        
+    }
+    .courses{
+        text-align: center;
+    }
+}
+
+/* RESPONSIVENESS */
+/* TABLET */
+@media screen and (max-width: 769px) {
+    section {
+        padding: 0;
+        height: 100vh;
+    }
+
+    section table{
+        padding: 10px;
+        width: 80%;
+        margin: auto;
+        font-size: smaller;
+        td {
+            padding-left: 0;
+        }
+        th, tr, td {
+            border: 2px solid rgba(134, 132, 132, 0.2);
+            padding: 10px;
+        }
+    }
+
+}
+
+/* RESPONSIVENESS */
+/* LARGE MOBILE */
+@media screen and (max-width: 430px) {
+
+    section table {
+        padding: 10px;
+        width: 80%;
+        margin: auto;
+        font-size: smaller;
+        td{
+            padding-left: 0;
+        }
+        th, tr, td {
+            border: 2px solid rgba(134, 132, 132, 0.2);
+            padding: 5px;
+        }
+    }
+    .mobile-No {
+        display: none;
+    }
+    .mobile-Yes{
+        font-size: 11px;
+    }
+}
+
+/* RESPONSIVENESS */
+/* MEDIUM MOBILE */
+@media screen and (max-width: 380px) {
+
+    section table {
+        height: 20px;
+        padding: 0;
+        width: 20px;
+        margin: auto;
+
+        th,
+        tr,
+        td {
+            border: 2px solid rgba(134, 132, 132, 0.2);
+            padding: 2px;
+        }
+    }
+
+    section{
+        padding: 0;
+    }
+        
+
+}
+
+/* RESPONSIVENESS */
+/* MOBILE */
+@media screen and (max-width: 321px) {
+    header h1{font-size: 14px;
+    }
+
+    section table {
+
+        th,
+        tr,
+        td {
+            border: 2px solid rgba(134, 132, 132, 0.2);
+            /* padding: 5px; */
+        }
+    }
+
+    .kugggz{
+        width: 90%;
+        margin: auto;
+        font-size: 13px;
+        /* display: none; */
+    }
+    
+
+}
